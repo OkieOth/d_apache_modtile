@@ -1,0 +1,5 @@
+**/data
+**/*.swp
+**/tmp
+**/tiles
+**/boundaries.tbz
