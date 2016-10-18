@@ -18,7 +18,7 @@ COPY boundaries.tbz /opt/boundaries.tbz
 RUN cd /opt && tar -xjf boundaries.tbz
 
 COPY startTileServer.sh /startTileServer.sh
-COPY test/index.html /opt/osm/test/index.html
+ADD test /opt/osm/test
 COPY mod_tile.conf /etc/apache2/conf-enabled
 
 COPY renderd.conf /etc/renderd.conf
